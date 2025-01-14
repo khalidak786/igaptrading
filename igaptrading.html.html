@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+.container {
+  display: flex; /* Use flexbox for easy horizontal layout */
+ justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+img {
+  max-width: 700px; /* Adjust as needed */
+  margin-right: 20px; /* Add spacing between image and text */
+}
+
+.text-container {
+  /* Optional: Add styles for the text container */
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+ font-family: sans serif;
+font-size:35px;
+margin:10px;
+}
+
+@media (min-width: 600px) { /* Adjust breakpoint as needed */
+  .content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center vertically within the column */
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <img src="igap2.jpeg" alt="Your Image">
+  <div class="text-container">
+    <p>A global trading business with interests in paper, polymers, steel and energy.</p>
+  </div>
+</div>
+
+
+
+
+</body>
