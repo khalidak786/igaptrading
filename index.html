@@ -1,60 +1,234 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGAP- Trading in paper, polymers, steel and energy.</title>
-    <link rel="icon" href="igap2.jpeg">
-
-
-<style>
-
-
-
-.container {
-  display: flex; /* Use flexbox for easy horizontal layout */
- justify-content: center;
-align-items: center;
-min-height: 100vh;
-}
-
-img {
-  max-width: 700px; /* Adjust as needed */
-  margin-right: 20px; /* Add spacing between image and text */
-}
-
-.text-container {
-  /* Optional: Add styles for the text container */
-  padding: 10px;
-  border: 0px solid #ccc;
-  border-radius: 5px;
- font-family: sans serif;
-font-size:35px;
-margin:10px;
-}
-
-@media (min-width: 600px) { /* Adjust breakpoint as needed */
-  .content {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center vertically within the column */
-  }
-}
-
-</style>
+    <title>IGAP Trading - Global Commodity Trading Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/igap-logo.png" alt="IGAP Trading Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products/index.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="products/raw-materials.html">Raw Materials</a>
+                            <a href="products/semi-finished.html">Semi-Finished Goods</a>
+                            <a href="products/finished-goods.html">Finished Goods</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="industries/index.html">Industries <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="industries/oil-gas.html">Oil & Gas</a>
+                            <a href="industries/construction.html">Construction</a>
+                            <a href="industries/agriculture.html">Agriculture</a>
+                            <a href="industries/manufacturing.html">Manufacturing</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="expertise.html">Our Expertise</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-<div class="container">
-  <img src="igap2.jpeg" alt="Your Image">
-  <div class="text-container">
-    <p>A global trading business with interests in paper, polymers, steel and energy.</p>
-  </div>
-</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Global Trading Solutions with Decades of Expertise</h1>
+            <p>From raw material procurement to final delivery, we handle your complete trade cycle with precision and reliability.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search products or industries...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <div class="search-results" id="search-results"></div>
+            </div>
+            
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+    </section>
 
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="container">
+            <h2>Our Value Proposition</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Reach</h3>
+                    <p>Offices in UAE, Canada, UK, India, and Pakistan with worldwide logistics networks.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>End-to-End Solutions</h3>
+                    <p>Complete trade cycle management from procurement to delivery and payment collection.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Just-in-Time Delivery</h3>
+                    <p>Precision logistics for timely delivery of your commodities and products.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>20+ Years Experience</h3>
+                    <p>Decades of expertise in finance, logistics, and trade operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2>Our Product Categories</h2>
+            <div class="category-grid">
+                <a href="products/raw-materials.html" class="category-card">
+                    <img src="images/raw-materials.jpg" alt="Raw Materials">
+                    <h3>Raw Materials & Commodities</h3>
+                </a>
+                <a href="products/semi-finished.html" class="category-card">
+                    <img src="images/semi-finished.jpg" alt="Semi-Finished Goods">
+                    <h3>Semi-Finished Goods</h3>
+                </a>
+                <a href="products/finished-goods.html" class="category-card">
+                    <img src="images/finished-goods.jpg" alt="Finished Goods">
+                    <h3>Finished & Industrial Goods</h3>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Industries Served -->
+    <section class="industries">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <div class="industry-grid">
+                <a href="industries/oil-gas.html" class="industry-card">
+                    <img src="images/oil-gas.jpg" alt="Oil & Gas">
+                    <h3>Oil & Gas</h3>
+                </a>
+                <a href="industries/construction.html" class="industry-card">
+                    <img src="images/construction.jpg" alt="Construction">
+                    <h3>Construction</h3>
+                </a>
+                <a href="industries/agriculture.html" class="industry-card">
+                    <img src="images/agriculture.jpg" alt="Agriculture">
+                    <h3>Agriculture</h3>
+                </a>
+                <a href="industries/manufacturing.html" class="industry-card">
+                    <img src="images/manufacturing.jpg" alt="Manufacturing">
+                    <h3>Manufacturing</h3>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Global Presence -->
+    <section class="global-presence">
+        <div class="container">
+            <h2>Our Global Presence</h2>
+            <div class="office-grid">
+                <div class="office-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>UAE (Headquarters)</h3>
+                    <p>Dubai, United Arab Emirates</p>
+                </div>
+                <div class="office-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Canada</h3>
+                    <p>Toronto, Ontario</p>
+                </div>
+                <div class="office-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>United Kingdom</h3>
+                    <p>London, UK</p>
+                </div>
+                <div class="office-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>India</h3>
+                    <p>Mumbai, India</p>
+                </div>
+                <div class="office-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Pakistan</h3>
+                    <p>Karachi, Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to streamline your global trade operations?</h2>
+            <p>Contact our team today to discuss your specific requirements.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="expertise.html" class="btn btn-secondary">Our Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/igap-logo-white.png" alt="IGAP Trading Logo" class="footer-logo">
+                    <p>Global trading solutions with decades of expertise in finance, logistics, and supply chain management.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="expertise.html">Our Expertise</a></li>
+                        <li><a href="products/index.html">Products</a></li>
+                        <li><a href="industries/index.html">Industries</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE (Headquarters)</li>
+                        <li><i class="fas fa-phone"></i> +971 4 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@igaptrading.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 IGAP Trading. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+</html>
